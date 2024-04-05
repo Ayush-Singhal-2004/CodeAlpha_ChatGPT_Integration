@@ -1,0 +1,125 @@
+@font-face {
+    font-family: sohne;
+    src: url(../font/TestSöhne-Extraleicht.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-container{
+    height: 100%;
+    width: 20%;
+    background-color: #171717;
+}
+
+.main{
+    height: 100%;
+    width: 80%;
+}
+
+.head{
+    padding: 2vh 1.5vw;
+}
+
+.content{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5vw;
+}
+
+.hero-section{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5vw;
+    padding-bottom: 3vw;
+}
+
+.hero-section img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.input{
+    height: 10%;
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    padding: 0 1vw;
+    background-color: inherit;
+    border: 1px solid grey;
+    gap: 1vw;
+}
+
+.input input{
+    height: 70%;
+    width: 100%;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 1.1vw;
+    background-color: inherit;
+}
+
+.messages-container{
+    height: 86%;
+    width: 100%;
+    padding: 0 12vw;
+    padding-top: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    overflow-y: scroll;
+}
+
+.messages-container::-webkit-scrollbar{
+    display: none;
+}
+
+.message{
+    /* background-color: pink; */
+}
+
+.message img{
+    height: 28px;
+    border-radius: 50%;
+}
+
+.message-heading{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+.message-content p{
+    font-weight: lighter;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    padding-top: 1vh;
+    padding-left: 3vw;
+    font-family: sohne;
+    word-spacing: 3px;
+}
